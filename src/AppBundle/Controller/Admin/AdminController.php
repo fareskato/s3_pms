@@ -1,19 +1,19 @@
 <?php
 
-namespace AppBundle\Controller;
+namespace AppBundle\Controller\Admin;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
-class DefaultController extends Controller
+class AdminController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/admin", name="dashboard")
      */
     public function indexAction()
     {
         // replace this example code with whatever you need
-        return $this->render('base.html.twig');
+        return $this->render('admin/dashboard.html.twig');
     }
 }
